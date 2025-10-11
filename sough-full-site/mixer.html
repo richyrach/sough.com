@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mixer — Sough</title>
+<link rel="icon" type="image/svg+xml" href="/assets/icon.svg">
+<link rel="icon" href="/assets/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0b0f14">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav"><div class="wrap"><div class="logo"><img src="/assets/icon.svg" alt=""><span>Sough</span></div>
+  <div><a href="/index.html">Home</a><a href="/mixer.html" style="color:#fff">Mixer</a><a href="/remixer.html">Remixer</a><a href="/beatlab.html">Beat&nbsp;Lab</a></div>
+</div></nav>
+
+<main id="main" class="section">
+  <div class="wrap grid" style="grid-template-columns:1.25fr .75fr">
+    <div class="card">
+      <h2 style="margin:6px 0 2px">Mixer</h2>
+      <p class="small">Click <strong>Play</strong> once. <strong>Stop</strong> fades the master without changing slider values.</p>
+      <div id="mixer"></div>
+      <div class="hr"></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" id="play">Play</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="save">Copy Link</button>
+        <button class="btn" id="random">Shuffle</button>
+        <button class="btn" id="default">Default</button>
+      </div>
+    </div>
+    <div class="card">
+      <canvas id="viz"></canvas>
+      <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+        <button class="btn" id="brown">Brown</button>
+        <button class="btn" id="pink">Pink</button>
+        <button class="btn" id="white">White</button>
+        <button class="btn" id="mute">Mute</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">© 2025 Sough · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></footer>
+<script src="/js/visualizer.js"></script>
+<script src="/js/audio.js"></script>
+</body>
+</html>
