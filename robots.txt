@@ -1,3 +1,3 @@
 User-agent: *
-Allow: /
+Allow: /ads.txt
 Sitemap: https://sough.com/sitemap.xml
